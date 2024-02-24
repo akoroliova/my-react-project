@@ -1,7 +1,8 @@
 //Product (компонент) каже: ось яка в мене структура, я очікую такі пропси
 //App буде підставляти значення для цих пропсів
+import PropTypes from 'prop-types';
 
-export const Product = ({
+const Product = ({
   name,
   imgUrl = 'https://dummyimage.com/640x480/2a2a2a/ffffff&text=Product+image+placeholder',
   price,
@@ -12,3 +13,12 @@ export const Product = ({
     <p>Price: {price} credits</p>
   </div>
 );
+
+// Опис типів пропсів компонента
+Product.propTypes = {
+  name: PropTypes.string.isRequired,
+  imgUrl: PropTypes.string,
+  price: PropTypes.number.isRequired,
+};
+
+export default Product;
