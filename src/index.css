@@ -13,7 +13,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  margin: 0px;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
 a {
+  font-family: sans-serif;
+  line-height: 1.5;
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
@@ -23,17 +32,32 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 button {

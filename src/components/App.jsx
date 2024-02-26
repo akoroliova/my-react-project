@@ -3,10 +3,17 @@ import Product from './Product';
 import { BookList } from './BookList';
 import { favouriteBooks } from '../assets/favouriteBooks';
 import { Alert } from './Alert';
+import { HiUser } from 'react-icons/hi';
 
 export default function App() {
   return (
     <div>
+      <div>
+        <p>
+          <HiUser className="my-icon" size="24" /> {name}
+        </p>
+      </div>
+
       <h1>Books of the week</h1>
       <BookList books={favouriteBooks} />
 
